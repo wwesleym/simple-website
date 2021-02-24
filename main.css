@@ -1,0 +1,110 @@
+/* presentation and styling  */
+
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: var(--hbg);
+  }
+
+body {
+    font-family: cambria; 
+    background: var(--bg);
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    color: var(--clr);
+}
+
+:root {
+    --red: #d40000;
+    --white: #ffffff;
+    --black: #000000;
+    --lightred: #f35524;
+    --yellow: #dfee0d;
+    --orange: #ffbe0d;
+    --brown: #7c2700;
+    --purple: #54108b;
+}
+
+
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--lightred);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+    --hbg: var(--orange);
+    --clr: var(--black);
+}
+  
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--red);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+    --hbg: var(--purple);
+    --clr: var(--white);
+}
+
+.btntheme {
+    position: absolute;
+    top: 20px;
+    left: 1000px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btntheme:focus { outline-style: none; }
+
+
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.945);
+    color: black;
+  }
+  
+  /* Active/current link */
+  .navbar a.active {
+    background-color: rgb(102, 102, 102);
+    color: white;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
